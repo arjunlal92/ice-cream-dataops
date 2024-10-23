@@ -1,7 +1,7 @@
 environment:
-  name: test
-  project: cdf-bootcamp-62-test
-  type: test
+  name: prod
+  project: cdf-bootcamp-62-prod
+  type: prod
   selected:
   - modules/
   - modules/bootcamp/data_foundation
@@ -11,7 +11,7 @@ environment:
 variables:
   modules:
     bootcamp:
-      CDF_PROJECT: cdf-bootcamp-62-test # ex. cdf-bootcamp-01-test
+      CDF_PROJECT: cdf-bootcamp-62-prod # ex. cdf-bootcamp-01-prod
       IDP_CLIENT_ID: ${IDP_CLIENT_ID} # replaced by .env
       IDP_CLIENT_SECRET: ${IDP_CLIENT_SECRET} # replaced by .env
       IDP_TENANT_ID: ${IDP_TENANT_ID} # replaced by .env
@@ -21,13 +21,13 @@ variables:
       IDP_TOKEN_URL: ${IDP_TOKEN_URL} # replaced by .env
       # Groups
       # OBJECT ID FOR TEST/PROD DATA PIPELINE OEE ENTRA GROUP
-      data_pipeline_oee_source_id: ca040809-f113-45dc-aba7-4dfc352cf13e
+      data_pipeline_oee_source_id: 300e1a16-c1f1-45b4-bc1b-12a55ad28d3f
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readwrite_source_id: e2bb2541-f625-4dcf-8a51-39bfbb03cfeb
+      readwrite_source_id: 96f3c55a-2b44-4319-a1c3-cd261062f20a
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readonly_source_id: e2bb2541-f625-4dcf-8a51-39bfbb03cfeb
+      readonly_source_id: 96f3c55a-2b44-4319-a1c3-cd261062f20a
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
-      icapi_extractors_source_id: f76539db-3b54-4159-a500-8c731459bf5f
+      icapi_extractors_source_id: c58ea8f8-a752-44e5-9dea-6af820f6634f
       # Client Ids
       data_pipeline_oee_client_id: ${DATA_PIPELINE_OEE_CLIENT_ID} # replaced by .env
       data_pipeline_oee_client_secret: ${DATA_PIPELINE_OEE_CLIENT_SECRET} # replaced by .env
@@ -40,7 +40,7 @@ variables:
         oee:
           uc_oee_ds_external_id: ds_uc_oee
           icapi_ds_external_id: ds_icapi
-      data_developer_source_id: 0d4bad78-26ec-4e2e-9868-5dda4bb8ded4
-      icapi_extractors_source_id: 2c245d43-2829-450a-9076-de78afc24704
-      ata_pipeline_oee_source_id: ca040809-f113-45dc-aba7-4dfc352cf13e
+      data_developer_source_id: b8fe6925-4db3-47c0-af38-34808fdf687c
+      icapi_extractors_source_id: c58ea8f8-a752-44e5-9dea-6af820f6634f
+      data_pipeline_oee_source_id: 300e1a16-c1f1-45b4-bc1b-12a55ad28d3f
       
