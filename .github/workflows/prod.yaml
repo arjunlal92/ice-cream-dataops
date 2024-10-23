@@ -11,6 +11,7 @@ jobs:
       IDP_SCOPES: https://westeurope-1.cognitedata.com/.default
       CDF_PROJECT: ${{ vars.CDF_PROJECT }}
       CDF_CLUSTER: westeurope-1
+      IDP_TENANT_ID : ${{ vars.IDP_TENANT_ID }}
       IDP_CLIENT_ID: ${{ vars.IDP_CLIENT_ID }}
       IDP_CLIENT_SECRET: ${{ secrets.IDP_CLIENT_SECRET }}
       IDP_TOKEN_URL: https://login.microsoftonline.com/16e3985b-ebe8-4e24-9da4-933e21a9fc81/oauth2/v2.0/token
@@ -23,7 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.11
+          python-version: 3.12
+          
       - uses: snok/install-poetry@v1
         with:
           version: 1.6.1
