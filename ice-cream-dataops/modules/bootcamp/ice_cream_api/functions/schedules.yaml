@@ -49,16 +49,7 @@
     hours: 720
     sites:
     - Nuremberg
- 
-- name: Backfill Nuremberg once a day for the last 30 days (gap filling)
-  functionExternalId: icapi_datapoints_extractor
-  cronExpression: "5 0 * * *"
-  data:
-    backfill: True
-    hours: 720
-    sites:
-    - Nuremberg
- 
+
 - name: Backfill Marseille once a day for the last 30 days (gap filling)
   functionExternalId: icapi_datapoints_extractor
   cronExpression: "6 0 * * *"
