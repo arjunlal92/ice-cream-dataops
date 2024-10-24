@@ -25,7 +25,7 @@ variables:
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
       readwrite_source_id: 96f3c55a-2b44-4319-a1c3-cd261062f20a
       # OBJECT ID FOR TEST/PROD ADMIN TK ENTRA GROUP
-      readonly_source_id: 96f3c55a-2b44-4319-a1c3-cd261062f20a
+      readonly_source_id: 18e083fb-fa88-47f4-a75a-b4a4dc6a2277
       # OBJECT ID FOR TEST/PROD ICAPI EXTRACTORS ENTRA GROUP
       icapi_extractors_source_id: c58ea8f8-a752-44e5-9dea-6af820f6634f
       # Client Ids
